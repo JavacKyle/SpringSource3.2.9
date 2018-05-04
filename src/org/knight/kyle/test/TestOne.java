@@ -19,5 +19,6 @@ public class TestOne {
         ((MyTestBean) bf.getBean("myTestBean")).setTestStr("hello spring source");
         System.out.println(((MyTestBean) bf.getBean("myTestBean")).getTestStr());
         System.out.println(((MyTestBean) bf.getBean("myTestBean")).getTestStr());//2018-05-04 15:18:51 kyle: same output proved be default the spring bean is singleton!
+        System.out.println(((MyTestBean) new XmlBeanFactory(new ClassPathResource("cc.xml")).getBean("myTestBean")).getTestStr());//2018-05-04 15:24:39 kyle: output is original proved repeat invoke XmlBeanFactory() will create a new spring container
     }
 }
