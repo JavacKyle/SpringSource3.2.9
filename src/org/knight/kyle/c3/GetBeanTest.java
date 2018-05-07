@@ -6,10 +6,12 @@ package org.knight.kyle.c3;
  * Date: 2018/5/7
  * Time: 9:48
  */
-public abstract class GetBeanTest {
+public class GetBeanTest {
     public void showMe() {
         this.getBean().showMe();
     }
 
-    public abstract User getBean();
+    public User getBean(){
+        return new User();
+    }
 }
