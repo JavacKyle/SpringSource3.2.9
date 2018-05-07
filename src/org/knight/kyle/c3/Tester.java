@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Tester {
     public static void main(String[] args) {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("org/knight/kyle/c3/lookupTest.xml");
-        ((GetBeanTest) ac.getBean("getBeanTest")).showMe();
+        ApplicationContext ac = new ClassPathXmlApplicationContext("org/knight/kyle/c3/repalceMethodTest.xml");
+        ((TestChangeMethod) ac.getBean("testChangeMethod")).changeMe();
     }
 }
