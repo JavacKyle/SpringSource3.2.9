@@ -12,6 +12,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Tester {
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("cc.xml");
-        ((TestBean) ac.getBean("test")).test();
+        ((TestBean) ac.getBean("test")).test();//如果被代理的目标对象实现了至少一个接口，则会使用JDK动态代理，否则创建一个CGLIB代理
     }
 }
