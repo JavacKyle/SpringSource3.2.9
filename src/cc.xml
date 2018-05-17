@@ -3,7 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <aop:aspectj-autoproxy/>
-    <bean id="test" class="org.knight.kyle.c7.TestBean"/>
+    <!--<bean id="test" class="org.knight.kyle.c7.TestBean"/>-->
+    <bean id="testImpl" class="org.knight.kyle.c7.TestImpl"/>
     <bean class="org.knight.kyle.c7.AspectJTest"/>
     <bean id="myTestBean" class="org.knight.kyle.test.MyTestBean"/>
 </beans>
