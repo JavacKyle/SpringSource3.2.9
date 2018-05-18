@@ -12,7 +12,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ClientTest {
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("cc-faker-client.xml");
-        HelloRIMService hms = ac.getBean("myClient", HelloRIMService.class);
+        HelloRMIService hms = ac.getBean("myClient", HelloRMIService.class);
         System.out.println(hms.getAdd(1, 2));
+        System.out.println(hms.getRmi());
     }
 }

@@ -9,11 +9,11 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
     <bean id="testImpl" class="org.knight.kyle.c7.TestImpl"/>
     <bean class="org.knight.kyle.c7.AspectJTest"/>
     <bean id="myTestBean" class="org.knight.kyle.test.MyTestBean"/>
-    <bean id="helloRIMServiceImpl" class="org.knight.kyle.c12.HelloRIMServiceImpl"/>
+    <bean id="helloRIMServiceImpl" class="org.knight.kyle.c12.HelloRMIServiceImpl"/>
     <bean id="myRIM" class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="helloRIMServiceImpl"/>
         <property name="serviceName" value="helloRMI"/>
-        <property name="serviceInterface" value="org.knight.kyle.c12.HelloRIMService"/>
+        <property name="serviceInterface" value="org.knight.kyle.c12.HelloRMIService"/>
         <property name="registryPort" value="9999"/>
     </bean>
 </beans>
