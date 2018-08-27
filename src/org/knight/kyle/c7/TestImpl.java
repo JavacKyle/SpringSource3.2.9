@@ -7,8 +7,9 @@ package org.knight.kyle.c7;
  * Time: 8:48
  */
 public class TestImpl implements Test {
-    private String testStr="testStr";
-    public String getTestStr(){
+    private String testStr = "testStr";
+
+    public String getTestStr() {
         return testStr;
     }
 
@@ -17,7 +18,7 @@ public class TestImpl implements Test {
     }
 
     @Override
-    public void test(){
+    public void test() {
         System.out.println("testPoint");
     }
 }

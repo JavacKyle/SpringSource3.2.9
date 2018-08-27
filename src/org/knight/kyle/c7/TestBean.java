@@ -7,8 +7,9 @@ package org.knight.kyle.c7;
  * Time: 8:48
  */
 public class TestBean {
-    private String testStr="testStr";
-    public String getTestStr(){
+    private String testStr = "testStr";
+
+    public String getTestStr() {
         return testStr;
     }
 
@@ -16,7 +17,7 @@ public class TestBean {
         this.testStr = testStr;
     }
 
-    public void test(){
+    public void test() {
         System.out.println("testPoint");
     }
 }
